@@ -11,6 +11,8 @@ function user(name, id, noOfProjects) {
     }
 
     obj.changeName = function(newName) {
+        let prevName = obj.name;
+        obj.name = newName;
         return obj.name;
     }
 
@@ -39,6 +41,8 @@ let userMethods = {
     },
 
     changeName: function(newName) {
+        let prevName = this.name;
+        this.name = newName;
         return this.name;
     },
 
@@ -81,6 +85,8 @@ User.prototype = {
     },
 
     changeName(newName) {
+        let prevName = this.name;
+        this.name = newName;
         return this.name;
     },
 
@@ -110,6 +116,8 @@ class User {
     }
 
     changeName(newName) {
+        let prevName = this.name;
+        this.name = newName;
         return this.name;
     }
 
