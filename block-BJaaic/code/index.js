@@ -9,7 +9,7 @@ let animalMethods = {
     },
 
     summary() {
-        return `I live in ${this.location} & I have ${this.numberOfLegs}`;
+        return `I live in ${this.location} & I have ${this.numberOfLegs} legs`;
     }
 
 }
@@ -47,10 +47,10 @@ let dogMethods = {
     Object.setPrototypeOf(dogMethods, animalMethods);
 
 function createDog(name, location, numberOfLegs, color) {
-    let dog = Object.create(dogMethods);
+    let dog = createAnimal(location, numberOfLegs);
+    Object.setPrototypeOf(dog, dogMethods);
     dog.name = name;
-    dog.location = location;
-    dog.numberOfLegs = numberOfLegs;
+   
     dog.color = color;
 
     return dog;
@@ -76,15 +76,16 @@ let catMethods = {
 
 }
 
-Object.setPrototypeOf(catMethods, animalMethods);
+ Object.setPrototypeOf(catMethods, animalMethods);
 
 function createCat(name, location, numberOfLegs, colorOfEyes) {
-    let cat = Object.create(catMethods);
+    let cat = createAnimal(location, numberOfLegs);
+    Object.setPrototypeOf(cat, catMethods);
     cat.name = name;
-    cat.location = location;
-    cat.colorOfEyes = colorOfEyes;
-    cat.numberOfLegs = numberOfLegs;
     
+    cat.colorOfEyes = colorOfEyes;
+    
+
     return cat;
 }
 
