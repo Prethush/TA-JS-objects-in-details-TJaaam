@@ -1,10 +1,10 @@
 class Book  {
-    constructor(title, category, author, isRead = false, finishedDate) {
+    constructor(title, category, author) {
         this.title = title;
         this.category = category;
         this.author = author;
-        this.isRead = isRead;
-        this.finishedDate = finishedDate;
+        this.isRead = false;
+        this.finishedDate = null;
     }
 
     markBookAsRead() {
@@ -15,43 +15,42 @@ class Book  {
 
 
 class BookList  {
-    constructor(bookArr, index) {
-        this.bookArr = bookArr;
-        this.index = index;
+    constructor() {
+        this.bookArr = [];
+        this.index = 0;
     }
 
-    addBook(arr) {
-        for(let i = 0; i < arr.length; i++) {
-            this.bookArr.push(arr[i]);
-        }
-        return this.bookArr;
+    addBook(arr = []) {
+        this.bookArr =  this.bookArr.concat(arr);
+        return this.book;
     }
 
     getCurrentBook() {
+
         return this.bookArr[this.index];
     }
 
     getPrevBook() {
-        return this.bookArr[this.index - 1];
+        this.index -= 1;
+        return this.bookArr[this.index];
     }
 
     getNextBook() {
-        return this.bookArr[this.index + 1];
+        this.index += 1;
+        return this.bookArr[this.index];
     }
 
-    changeCurrentBook(index) {
-        this.index = index;
+    changeCurrentBook(currentIndex) {
+        this.index = currentIndex;
     }
 }
 
-let book1 = new Book("Harry Potter", "Fantasy", "J K Rowling", false, 02/03/21);
-let book2 = new Book("Lord of the rings", "Fantasy", "Tolkins", true, 05/03/20);
-let book3 = new Book("Wings of fire", "Autobiography", "A P J", true, 02/03/21);
-let book4 = new Book("Lost", "Fiction", "Martin", false, 02/05/19);
-let book5 = new Book("Trapped", "Fantasy", "Peter", true, 01/03/21);
+let book1 = new Book("Harry Potter", "Fantasy", "J K Rowling");
+let book2 = new Book("Lord of the rings", "Fantasy", "Tolkins");
+let book3 = new Book("Wings of fire", "Autobiography", "A P J");
+let book4 = new Book("Lost", "Fiction", "Martin");
+let book5 = new Book("Trapped", "Fantasy", "Peter");
 
-let list1 = new BookList(["Absalom", "A Time to Kill", "The House of Mirth"],  1);
-let list2 = new BookList(["East of Eden", "The Sun Also Rises", "Vile Bodies "],  0);
-let list3 = new BookList([" A Scanner Darkly", "Play It as It Lays ", "The House of Mirth"],  1);
-let list4 = new BookList(["The Particular Sadness of Lemon Cake", "A Time to Kill", "Harry Potter"],  0);
-let list5 = new BookList(["Absalom", "A Time to Kill", "The House of Mirth"],  1);
+let list1 = new BookList();
+
+list1.addBook([book1, book2, book3, book4, book5]);
