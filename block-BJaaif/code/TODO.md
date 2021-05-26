@@ -69,9 +69,11 @@ function PersonConstructor() {
 
 Create a function `personFromConstructor` that takes as input a `name` and an `age`. When called, the function will create person objects using the `new` keyword instead of the Object.create method.
 
-function PersonConstructor(name, age) {
-    this.name = name;
-    this.age = age;
+function PersonFromConstructor(name, age) {
+    let obj = new PersonConstructor();
+    obj.name = name;
+    obj.age = age;
+    return obj;
 }
 
 #### Challenge 3/3

@@ -123,14 +123,21 @@ function userFactory(name, score) {
   return user;
 }
 
-var adminFunctionStore /* Put code here */;
+var adminFunctionStore  = Object.create(userFunctionStore);
 
 function adminFactory(name, score) {
-  // Put code here
+  let obj = userFactory(name, score);
+  Object.setPrototypeOf(obj, adminFunctionStore);
+  obj.type =  "Admin";
+  return obj;
 }
+
 
 /* Put code here for a method called sharePublicMessage*/
 
+adminFunctionStore.sharePublicMessage = function() {
+  console.log(`Welcome Users`);
+}
 var adminFromFactory = adminFactory('Eva', 5);
 
 // /********* Uncomment these lines to test your work! *********/
