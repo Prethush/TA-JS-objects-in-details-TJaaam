@@ -7,7 +7,8 @@ class Stack {
     push(value) {
         
         this.arr.push(value);
-        console.log(this.arr);
+        return this.arr;
+        
     }
 
     pop() {
@@ -53,52 +54,52 @@ myStack.pop();
 console.log(myStack.isEmpty()); // true
 
 
-class Queue {
+// class Queue {
 
-    constructor() {
-        this.arr = [];
-    }
+//     constructor() {
+//         this.arr = [];
+//     }
 
-    enqueue(value) {
-        this.arr.push(value);
-        return this.arr;
-    }
+//     enqueue(value) {
+//         this.arr.push(value);
+//         return this.arr;
+//     }
 
-    dequeue() {
-        this.arr.shift();
+//     dequeue() {
+//         this.arr.shift();
         
-    }
+//     }
 
-    peek(index = 0) {
-        return this.arr[index];
-    }
+//     peek(index = 0) {
+//         return this.arr[index];
+//     }
 
-    isEmpty() {
-        return this.arr.length === 0;
-    }
+//     isEmpty() {
+//         return this.arr.length === 0;
+//     }
 
-    displayQueue() {
-        return this.arr.join(" ");
-    }
+//     displayQueue() {
+//         return this.arr.join(" ");
+//     }
 
-    get length() {
-        return this.arr.length;
-    }
-}
+//     get length() {
+//         return this.arr.length;
+//     }
+// }
 
-let atmQueue = new Queue();
-atmQueue.enqueue('Aman');
-atmQueue.enqueue('John');
-atmQueue.enqueue('Rohan');
-console.log(atmQueue.displayQueue()); // "Aman John Rohan"
-console.log(atmQueue.length); // 3
-console.log(atmQueue.peek()); // "Aman"
-console.log(atmQueue.peek(1)); // "John"
-atmQueue.dequeue();
-console.log(atmQueue.length); // 2
-console.log(atmQueue.peek()); // 'John'
-console.log(atmQueue.isEmpty()); // false
-atmQueue.dequeue();
-atmQueue.dequeue();
-console.log(atmQueue.isEmpty()); // true
+// let atmQueue = new Queue();
+// atmQueue.enqueue('Aman');
+// atmQueue.enqueue('John');
+// atmQueue.enqueue('Rohan');
+// console.log(atmQueue.displayQueue()); // "Aman John Rohan"
+// console.log(atmQueue.length); // 3
+// console.log(atmQueue.peek()); // "Aman"
+// console.log(atmQueue.peek(1)); // "John"
+// atmQueue.dequeue();
+// console.log(atmQueue.length); // 2
+// console.log(atmQueue.peek()); // 'John'
+// console.log(atmQueue.isEmpty()); // false
+// atmQueue.dequeue();
+// atmQueue.dequeue();
+// console.log(atmQueue.isEmpty()); // true
 
