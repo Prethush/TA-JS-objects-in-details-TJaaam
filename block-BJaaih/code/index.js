@@ -9,7 +9,7 @@ Array.prototype.myMap = function(cb) {
   let finalArr = [];
   
   for(let i = 0; i < this.length; i++) {
-    finalArr.push(cb(this[i]));
+    finalArr.push(cb(this[i], i, this));
   }
   return finalArr;
 }
@@ -41,7 +41,7 @@ After adding the function test it using the code below.
 Array.prototype.myFilter = function(cb) {
   let finalArr = [];
   for(let i = 0; i < this.length; i++) {
-    if(cb(this[i])) {
+    if(cb(this[i], i, this)) {
       finalArr.push(this[i]);
     }
   }
@@ -69,9 +69,10 @@ Make sure it does not the changes the original array.
 
 Array.prototype.shuffle = function() {
   
- let finalArr=  this.sort((a, b) => {
+ let finalArr=  [...this].sort((a, b) => {
       return Math.random() - .5;
   })
+  
   return finalArr;
 }
 
