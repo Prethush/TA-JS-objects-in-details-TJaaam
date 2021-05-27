@@ -62,3 +62,19 @@ body {
     place-content: center center;
     min-height: 100vh;
 }
+
+
+.quiz {
+
+    form {
+
+        .form-control {
+            // display: block;
+        }
+    }
+}
+
+
+.show-result {
+    visibility: hidden;
+}
