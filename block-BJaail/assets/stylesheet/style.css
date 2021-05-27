@@ -71,88 +71,107 @@ body {
   margin: 0 auto;
 }
 
-.container {
+.container .form {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 4rem;
   padding: 2rem;
+  border-radius: .5rem;
 }
 
-.container h1 {
+.container .form legend {
   text-align: center;
   margin: 1rem 0;
   font-size: 3rem;
 }
 
-.container h1 span {
+.container .form legend span {
   color: #10a5f5;
 }
 
-.container h1 i {
+.container .form legend i {
   margin-right: .7rem;
   color: #10a5f5;
 }
 
-.container .form-control {
+.container .form .form-control {
   display: block;
   width: 100%;
   margin: 1rem 0;
-  padding: .5rem;
+  padding: .6rem;
   border: 1px solid lightgrey;
   outline: 0;
+  border-radius: .5rem;
 }
 
-.container button {
+.container .form .form-control:focus {
+  border: 1px solid blue;
+}
+
+.container .form button {
   display: block;
   width: 100%;
   padding: .6rem;
-  margin: 1.5rem 0 3rem;
+  margin: 1.5rem 0;
   outline: 0;
   background-color: #10a5f5;
   border: 0;
   color: #fff;
   font-size: 1.1rem;
-}
-
-.container .booklist-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  padding: 1rem;
-  border-bottom: 1px solid lightgrey;
-  border-top: 1px solid lightgrey;
-}
-
-.container .book-list {
-  margin-top: .5rem;
-}
-
-.container .book-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  padding: 1rem .3rem;
-  margin: .3rem 0;
-  background-color: #e7e3e3;
-}
-
-.container .book-list li span {
   cursor: pointer;
 }
 
-.red {
-  color: red;
+.container .books {
+  padding-top: 5rem;
 }
 
-.green {
-  color: "red";
+.container .books .bookList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .books .bookList li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31.5%;
+          flex: 0 1 31.5%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.container .books .bookList li img {
+  width: 100%;
+}
+
+.container .books .bookList li h1 {
+  font-size: 1.5rem;
+  margin: .7rem 0;
+  font-weight: 700;
+}
+
+.container .books .bookList li p {
+  margin: .5rem 0;
+}
+
+.container .books .bookList li button {
+  padding: .6rem 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.container .books .bookList li button:hover {
+  background-color: #1c85bd;
 }
 /*# sourceMappingURL=style.css.map */
