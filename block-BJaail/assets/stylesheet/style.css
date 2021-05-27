@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  font-size: 1rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.container h1 span {
+  color: #10a5f5;
+}
+
+.container h1 i {
+  margin-right: .7rem;
+  color: #10a5f5;
+}
+
+.container .form-control {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: .5rem;
+  border: 1px solid lightgrey;
+  outline: 0;
+}
+
+.container button {
+  display: block;
+  width: 100%;
+  padding: .6rem;
+  margin: 1.5rem 0 3rem;
+  outline: 0;
+  background-color: #10a5f5;
+  border: 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.container .booklist-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+}
+
+.container .book-list {
+  margin-top: .5rem;
+}
+
+.container .book-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 1rem .3rem;
+  margin: .3rem 0;
+  background-color: #e7e3e3;
+}
+
+.container .book-list li span {
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: "red";
+}
+/*# sourceMappingURL=style.css.map */
