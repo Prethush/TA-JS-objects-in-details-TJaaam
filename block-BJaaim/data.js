@@ -1,30 +1,39 @@
-let questionArray = [
-
+const quizCollection = [
     {
-        question: "Who is the President of India",
-        a: "Manmohan Singh",
-        b: "Amith Shah",
-        c: "Narendra Modi",
-        d: "Ramnath Kovind",
-        answer: "d"
+        title: "Who is the president of India",
+        options: [
+            "Manmohan Singh",
+            "Narendra Modi",
+            "Ramnath Kovind",
+            "Amith Shah"
+        ],
+        answer: 2
     },
 
     {
-        question: "Who is the President of USA",
-        a: "M L K",
-        b: "J F K",
-        c: "Joe Biden",
-        d: "Donald Trump",
-        answer: "c"
+        title: "Who is the president of USA",
+        options: [
+            "J F K",
+            "M L K",
+            "Donald Trump",
+            "Joe Biden"
+        ],
+        answer: 3
     },
 
     {
-        question: "Who is the President of India",
-        a: "Manmohan Singh",
-        b: "Amith Shah",
-        c: "Narendra Modi",
-        d: "Ramnath Kovind",
-        answer: "d"
-    }
+        title: "What is the capital of USA?",
+        options: [
+            "Wahington DC",
+            "New Jersey",
+            "New York",
+            "California"
+        ],
+        answer: 0
+    },
 
-]
+
+
+
+
+];
