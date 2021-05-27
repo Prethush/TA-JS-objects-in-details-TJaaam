@@ -4,8 +4,8 @@ class BookList {
         this.root = root;
     }
 
-    add(title, author, isbn) {
-        let book = new Book(title, author, isbn);
+    add(title, author, isbn, bookImg) {
+        let book = new Book(title, author, isbn, bookImg);
         this.books.push(book);
         this.createUI();
         return this.books.length;
@@ -32,10 +32,11 @@ class BookList {
 
 
 class Book {
-    constructor(title, author, isbn) {
+    constructor(title, author, isbn, bookImg) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
+        this.bookImg = bookImg;
         this.isRead = false;
         this.state = "Not read";
         
@@ -52,9 +53,7 @@ class Book {
 
     createUI() {
         let li = document.createElement("li");
-        
-        let input = document.createElement("input");
-        
+        let img = document.createElement("img");        
         let title = document.createElement("p");
         title.innerText = this.title;
         let author = document.createElement("p");
@@ -82,11 +81,12 @@ let myBook = new BookList(container, []);
 let title = document.getElementById("title");
 let author = document.getElementById("author");
 let isbn = document.getElementById("isbn");
+let bookImg = document.createElement("book-img");
 
 let submit = document.querySelector("button");
 submit.addEventListener("click", (event) => {
 
-    myBook.add(title.value, author.value, isbn.value);
+    myBook.add(title.value, author.value, isbn.value, bookImg.value);
     title.value = "";
     author.value = "";
     isbn.value = "";
