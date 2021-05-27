@@ -1,0 +1,95 @@
+@import "reset";
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    font-size: 1rem;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    margin-top: 4rem;
+    padding: 2rem;
+
+    h1 {
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 3rem;
+        span {
+            color: #10a5f5;
+        }
+
+        i {
+            margin-right: .7rem;
+            color: #10a5f5;
+        }
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+        padding: .5rem;
+        border: 1px solid lightgrey;
+        outline: 0;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: .6rem;
+        margin: 1.5rem 0 3rem;
+        outline: 0;
+        background-color: #10a5f5;
+        border: 0;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .booklist-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 1px solid lightgrey;
+            border-top: 1px solid lightgrey;
+    }
+
+    .book-list {
+        margin-top: .5rem;
+        li {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            
+
+            padding: 1rem .3rem;
+            margin: .3rem 0;
+            background-color: rgb(231, 227, 227);
+
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+
+.red {
+    color: red;
+}
+
+.green {
+    color: "red";
+}
