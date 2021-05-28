@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  font-size: 1rem;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container .form {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+.container .form legend {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.container .form legend span {
+  color: #10a5f5;
+}
+
+.container .form legend i {
+  margin-right: .7rem;
+  color: #10a5f5;
+}
+
+.container .form .form-control {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: .6rem;
+  border: 1px solid lightgrey;
+  outline: 0;
+  border-radius: .5rem;
+}
+
+.container .form .form-control:focus {
+  border: 1px solid blue;
+}
+
+.container .form button {
+  display: block;
+  width: 100%;
+  padding: .6rem;
+  margin: 1.5rem 0;
+  outline: 0;
+  background-color: #10a5f5;
+  border: 0;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.container .books {
+  padding-top: 5rem;
+}
+
+.container .books .bookList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .books .bookList li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31.5%;
+          flex: 0 1 31.5%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.container .books .bookList li img {
+  width: 100%;
+}
+
+.container .books .bookList li h1 {
+  font-size: 1.5rem;
+  margin: .7rem 0;
+  font-weight: 700;
+}
+
+.container .books .bookList li p {
+  margin: .5rem 0;
+}
+
+.container .books .bookList li button {
+  padding: .6rem 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+.container .books .bookList li button:hover {
+  background-color: #1c85bd;
+}
+/*# sourceMappingURL=style.css.map */
