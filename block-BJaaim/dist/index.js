@@ -76,6 +76,7 @@ class Quiz {
 
         activeQuestion.options.forEach((option, index) => {
             let div = document.createElement("div");
+            div.classList.add("input-container");
             let input = document.createElement("input");
             
             input.id = `option-${index}`;

@@ -187390,4 +187390,50 @@ video {
 
 legend {
     font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.input-container {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+
+input[type="radio"] {
+    margin-right: .5rem;
+}
+
+input[type="submit"] {
+   background-color: rgb(95,165,250);
+   display: block;
+   width: 100%;
+   padding: .5rem 0;
+   border-radius: .5rem;
+   color: #fff;
+   font-weight: 700;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+.show-result {
+  visibility: hidden;
+  border: 0;
+  outline: 0;
+
+  
+}
+
+.show-result:focus {
+  border: 0;
+  outline: 0;
+}
+
+.next:focus {
+  border: 0;
+  outline: 0;
+}
+
+.prev:focus {
+  border: 0;
+  outline: 0;
 }
