@@ -86,6 +86,11 @@ class Quiz {
              
              label.setAttribute("for", `option-${index}`);
              label.innerText = option;
+             
+             
+             
+             div.append(input, label);
+             optionsElm.append(div);
              form.addEventListener("submit", (event) => {
                 event.preventDefault();
                 if(input.checked) {
@@ -95,8 +100,6 @@ class Quiz {
                     }
                 }
             })
-             div.append(input, label);
-             optionsElm.append(div);
              
         })
        
@@ -109,6 +112,7 @@ class Quiz {
 
 function init() {
     let quiz = new Quiz();
+    console.log(quiz);
     quizCollection.forEach((question) => {
         quiz.addQuestion(question.title, question.options, question.answer);
     })
